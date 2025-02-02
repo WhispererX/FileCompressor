@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ------------------------------- Styles -------------------------------- -->
+    <link rel="stylesheet" href="styles.css">
+
+    <title>File Compressor </title>
+</head>
+
+<body>
+    <canvas id="particle-canvas"></canvas>
+
+    <center>
+        <!-- Title -->
+        <h1 class="title" id="title">File Compressor v<span id="electron-version"></span></h1>
+        <!-- Drag & Drop -->
+        <div class="drag-and-drop-area">
+            <h2>Drag & Drop to Upload Files</h2>
+            <h3>OR</h3>
+            <div class="button-container">
+                <button id="browse-button">Browse Files</button>
+            </div>
+        </div>
+
+        <hr>
+
+        <h6>Maximum upload size: 500MB</h6>
+
+        <div id="loading-indicator" style="display: none;">
+            <h6>Compressing file, please wait...</h6>
+        </div>
+
+        <h2 class="title" id="converted-files">Compressed Files</h2>
+
+        <div id="files" class="files">
+
+        </div>
+    </center>
+
+
+
+
+    <footer>
+        <script src="renderer.js"></script>
+        <script src="background_particles.js"></script>
+    </footer>
+</body>
+
+</html>
